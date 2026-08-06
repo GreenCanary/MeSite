@@ -1,0 +1,171 @@
+/* ========================================
+   ГЛОБАЛЬНЫЕ НАСТРОЙКИ
+   ======================================== */
+* {
+    margin: 3px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2d2d2d;
+    color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ========================================
+   ШАПКА (HEADER)
+   ======================================== */
+header {
+    background-color: #1e1e1e;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #444;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+header nav a {
+    color: #ccc;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #ffffff;
+}
+
+/* ========================================
+   ОСНОВНОЙ КОНТЕНТ
+   ======================================== */
+main {
+    flex: 1;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    width: 100%;
+}
+
+section {
+    background-color: #3a3a3a;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    border-bottom: 2px solid #555;
+    padding-bottom: 10px;
+}
+
+/* ========================================
+   ПОДВАЛ (FOOTER)
+   ======================================== */
+footer {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #444;
+    color: #888;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+/* ========================================
+   ВСПОМОГАТЕЛЬНЫЕ КЛАССЫ
+   ======================================== */
+.text-center {
+    text-align: center;
+}
+
+.avatar {
+    display: inline;
+    padding: 10px;          /* Отступ внутри рамки */
+    background-color: #4a4a4a; /* Будет видно внутри отступа */
+    border-radius: 15%;     /* Сделает круглую рамку (опционально) */
+    width: 300px;           /* Размер картинки */
+}
+
+.avatar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caption {
+    margin-top: 5px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+.avatar-wrapper {
+    display: flex;                /* This forces them side by side */
+    flex-direction: row;          /* Default, but be explicit */
+    justify-content: center;      /* Centers them horizontally */
+    gap: 20px;                   /* Space between them */
+    align-items: center;         /* Vertically aligns them */
+}
+
+.shadow-white:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(160 160 160);
+}
+
+.shadow-purple:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(137 15 148);
+}
+
+.shadow-red:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(161 19 19);
+}
+
+.shadow-green:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(101 148 15);
+}
+
+.shadow-black:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0 0 0);
+}
+
+.topnav span {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    font-size: 17px;
+    cursor: default;  /* Changes cursor to default arrow instead of hand */
+}
+
+.topnav span:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+.topnav span.right {
+    float: right;
+}
+
+.topnav span.active {
+    background-color: #cc1f21;
+    border-radius: 4px;
+}
