@@ -2,18 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <title>Mike Site</title>
-    <link rel="stylesheet" href="/images/style.css">
+  <th:block th:replace ="fragments :: head"></th:block>
 </head>
 <body>
-<div class="topnav">
-    <span class="active">Home</span>
-    <span class="right">Settings</span>
-    <span class="right">Login</span>
-
-</div>
+<div th:replace ="fragments::topnav(currentPage='home')"></div>
 <div class=" text-center">
 <h1>Welcome to my site, Me|Site if you will</h1>
 <h2>Here you can learn things about me!</h2>
@@ -40,10 +32,6 @@
     <img th:src="@{/images/Map.png}" class="avatar shadow-black">
     <p class="caption">Where Do I Live?</p>
 </div>
-<footer>
-    <p>© 2026 MikeMikeMike124 productions</p>
-    <p>All rights definitely reserved</p>
-    <p>Telegram: @somerandomassusername</p>
-</footer>
+<div th:replace = "fragments :: footer"></div>
 </body>
 </html>

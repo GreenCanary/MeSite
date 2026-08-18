@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Этот блок можно будет подключать в каждую страницу -->
+    <title>Mike Site - Home</title>
+    <th:block th:fragment="head">
+        <meta charset="UTF-8"/>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
+        <link rel="stylesheet" href="/images/style.css"/>
+    </th:block>
+</head>
+<body>
+
+<!-- Навигация -->
+<div th:fragment="topnav">
+    <div class="topnav">
+        <span class="active">Home</span>
+        <span class="right">Settings</span>
+        <span class="right">Login</span>
+    </div>
+</div>
+
+<!-- Подвал -->
+<div th:fragment="footer">
+    <footer>
+        <p>© 2026 MikeMikeMike124 productions</p>
+        <p>All rights definitely reserved</p>
+        <p>Telegram: @somerandomassusername</p>
+    </footer>
+</div>
+
+</body>
+</html>
