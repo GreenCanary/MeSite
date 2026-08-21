@@ -98,6 +98,29 @@ footer {
     background-color: #4a4a4a; /* Будет видно внутри отступа */
     border-radius: 15%;     /* Сделает круглую рамку (опционально) */
     width: 300px;           /* Размер картинки */
+    height: auto;
+    object-fit: cover;
+}
+
+.avatar-small {
+    width: 100px;  /* Меньше размер */
+    height: 100px; /* Квадратная */
+    padding: 3px;
+    background-color: #4a4a4a;
+    border-radius: 50%; /* Круглая, можно оставить 15% если хочешь скруглённые углы */
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Очень маленькая (для иконок в списке) */
+.avatar-tiny {
+    width: 50px;
+    height: 50px;
+    padding: 2px;
+    background-color: #4a4a4a;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .avatar-container {

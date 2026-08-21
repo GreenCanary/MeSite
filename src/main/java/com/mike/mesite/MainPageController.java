@@ -9,5 +9,9 @@ public class MainPageController {
     public String home(){
         return "MainPage";
     }
+    @GetMapping("/hobbies")
+    public String hobbies(){
+        return "Hobbies";
+    }
 
 }
