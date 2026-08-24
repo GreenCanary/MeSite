@@ -92,41 +92,27 @@ footer {
     text-align: center;
 }
 
+.text-flex {
+    display: flex;
+}
+
+
 .avatar {
-    display: inline;
+    display: flex;
+    flex-direction: column;
     padding: 10px;          /* Отступ внутри рамки */
     background-color: #4a4a4a; /* Будет видно внутри отступа */
     border-radius: 15%;     /* Сделает круглую рамку (опционально) */
     width: 300px;           /* Размер картинки */
     height: auto;
     object-fit: cover;
-}
-
-.avatar-small {
-    width: 100px;  /* Меньше размер */
-    height: 100px; /* Квадратная */
-    padding: 3px;
-    background-color: #4a4a4a;
-    border-radius: 50%; /* Круглая, можно оставить 15% если хочешь скруглённые углы */
-    object-fit: cover;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Очень маленькая (для иконок в списке) */
-.avatar-tiny {
-    width: 50px;
-    height: 50px;
-    padding: 2px;
-    background-color: #4a4a4a;
-    border-radius: 50%;
-    object-fit: cover;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.avatar-container {
-    display: flex;
-    flex-direction: column;
     align-items: center;
+}
+
+
+.avatar-center {
+    align-items: center;
+
 }
 
 .caption {
@@ -143,6 +129,16 @@ footer {
     justify-content: center;      /* Centers them horizontally */
     gap: 20px;                   /* Space between them */
     align-items: center;         /* Vertically aligns them */
+}
+
+.avatar-text {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: #3a3a3a;
+    padding: 15px;
+
+
 }
 
 .shadow-white:hover {
@@ -186,6 +182,9 @@ footer {
 
 .topnav span.right {
     float: right;
+}
+.topnav span.left {
+    float: left;
 }
 
 .topnav span.active {

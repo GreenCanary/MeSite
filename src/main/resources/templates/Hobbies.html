@@ -6,13 +6,15 @@
     <th:block th:replace ="fragments :: head"></th:block>
 </head>
 <body>
-<div th:replace ="fragments::topnav(currentPage='home')"></div>
+<div th:replace ="fragments::topnav"></div>
 <div class=" text-center">
     <h1>Hobbies bobbies</h1>
-
 </div>
 
-
+<div class="avatar-text">
+<img th:src="@{/images/Prima.jpg}" class="avatar">
+    <p>I love to blah blah blah</p>
+</div>
 
 <div th:replace = "fragments :: footer"></div>
 </body>
